@@ -1,0 +1,158 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'films_form.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(823, 645)
+        Form.setStyleSheet("background-color: white;")
+        self.label = QtWidgets.QLabel(Form)
+        self.label.setGeometry(QtCore.QRect(10, 0, 251, 41))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        font.setPointSize(18)
+        font.setBold(False)
+        font.setWeight(50)
+        self.label.setFont(font)
+        self.label.setStyleSheet("background: transparent;")
+        self.label.setObjectName("label")
+        self.image = QtWidgets.QLabel(Form)
+        self.image.setGeometry(QtCore.QRect(0, 50, 821, 291))
+        self.image.setText("")
+        self.image.setAlignment(QtCore.Qt.AlignCenter)
+        self.image.setObjectName("image")
+        self.actors = QtWidgets.QPlainTextEdit(Form)
+        self.actors.setGeometry(QtCore.QRect(10, 430, 221, 211))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.actors.setFont(font)
+        self.actors.setStyleSheet("background-color: white;\n"
+"border: 2px solid #0091fa;")
+        self.actors.setReadOnly(True)
+        self.actors.setObjectName("actors")
+        self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setGeometry(QtCore.QRect(10, 390, 61, 16))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.label_2.setFont(font)
+        self.label_2.setStyleSheet("background: transparent;")
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(Form)
+        self.label_3.setGeometry(QtCore.QRect(70, 390, 411, 16))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("background: transparent;")
+        self.label_3.setObjectName("label_3")
+        self.label_actors = QtWidgets.QLabel(Form)
+        self.label_actors.setGeometry(QtCore.QRect(10, 410, 41, 16))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.label_actors.setFont(font)
+        self.label_actors.setStyleSheet("background: transparent;")
+        self.label_actors.setObjectName("label_actors")
+        self.about = QtWidgets.QPlainTextEdit(Form)
+        self.about.setGeometry(QtCore.QRect(240, 430, 321, 211))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.about.setFont(font)
+        self.about.setStyleSheet("background-color: white;\n"
+"border: 2px solid #0091fa;")
+        self.about.setReadOnly(True)
+        self.about.setObjectName("about")
+        self.cinemas = QtWidgets.QListWidget(Form)
+        self.cinemas.setGeometry(QtCore.QRect(570, 370, 251, 271))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.cinemas.setFont(font)
+        self.cinemas.setStyleSheet("background-color: white;\n"
+"border: 2px solid #0091fa;")
+        self.cinemas.setObjectName("cinemas")
+        self.name = QtWidgets.QLabel(Form)
+        self.name.setGeometry(QtCore.QRect(190, 370, 381, 41))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        font.setPointSize(14)
+        font.setBold(False)
+        font.setWeight(50)
+        self.name.setFont(font)
+        self.name.setStyleSheet("background: transparent;")
+        self.name.setAlignment(QtCore.Qt.AlignCenter)
+        self.name.setObjectName("name")
+        self.previous = QtWidgets.QPushButton(Form)
+        self.previous.setEnabled(False)
+        self.previous.setGeometry(QtCore.QRect(290, 10, 81, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(8)
+        font.setBold(False)
+        font.setWeight(50)
+        self.previous.setFont(font)
+        self.previous.setStyleSheet("border-radius: 10px;\n"
+"background-color: white;\n"
+"border: 5px solid #0091fa;")
+        self.previous.setObjectName("previous")
+        self.following = QtWidgets.QPushButton(Form)
+        self.following.setGeometry(QtCore.QRect(380, 10, 81, 31))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(9)
+        font.setBold(False)
+        font.setWeight(50)
+        self.following.setFont(font)
+        self.following.setStyleSheet("border-radius: 10px;\n"
+"background-color: white;\n"
+"border: 5px solid #0091fa;")
+        self.following.setObjectName("following")
+        self.rating = QtWidgets.QLabel(Form)
+        self.rating.setGeometry(QtCore.QRect(10, 360, 61, 20))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.rating.setFont(font)
+        self.rating.setStyleSheet("background-color: #0091fa;\n"
+"color: white;")
+        self.rating.setAlignment(QtCore.Qt.AlignCenter)
+        self.rating.setObjectName("rating")
+        self.time = QtWidgets.QLabel(Form)
+        self.time.setGeometry(QtCore.QRect(80, 370, 101, 16))
+        font = QtGui.QFont()
+        font.setFamily("hAndy")
+        self.time.setFont(font)
+        self.time.setStyleSheet("background: transparent;")
+        self.time.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.time.setObjectName("time")
+
+        self.retranslateUi(Form)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Рекомендации"))
+        self.label.setText(_translate("Form", "Рекомендации"))
+        self.label_2.setText(_translate("Form", "Режиссер"))
+        self.label_3.setText(_translate("Form", "TextLabel"))
+        self.label_actors.setText(_translate("Form", "Актеры"))
+        self.name.setText(_translate("Form", "Режиссер"))
+        self.previous.setText(_translate("Form", "Предыдущий"))
+        self.following.setText(_translate("Form", "Следующий"))
+        self.rating.setText(_translate("Form", "Режиссер"))
+        self.time.setText(_translate("Form", "Режиссер"))
+
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    Form = QtWidgets.QWidget()
+    ui = Ui_Form()
+    ui.setupUi(Form)
+    Form.show()
+    sys.exit(app.exec_())
